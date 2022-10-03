@@ -1,0 +1,430 @@
+/* AWAL HEADER */
+svg {
+    margin-top: -5px;
+    margin-bottom: -36px;
+}
+
+.header {
+    background-color: #EFCED9;
+}
+
+.profile-content {
+    height: 670px;
+    padding: 0px;
+    z-index: 9999;
+}
+
+.header .container .profile-content img {
+    border-radius: 100px;
+    margin-top: -9px;
+    margin-left: -100px;
+
+}
+
+.header .container .profile-content .position-relative #buttonMaze {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #aircraft {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #survival {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #memory {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #tower {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #rubik {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #archery {
+    position: relative;
+}
+
+.header .container .profile-content .position-relative #snake {
+    position: relative;
+}
+
+
+/* awal button hover */
+.header .container .profile-content .position-relative button {
+    display: inline-block;
+    position: relative;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    /* margin: 28px 30px; */
+    background: #1A2929;
+
+}
+
+.header .container .profile-content .position-relative #buttonMaze:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative #aircraft:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative #survival:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative #memory:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+
+}
+
+.header .container .profile-content .position-relative #tower:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative #rubik:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative #snake:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative #archery:hover {
+    background-color: #467474;
+    box-sizing: border-box;
+}
+
+.header .container .profile-content .position-relative span {
+    display: block;
+    /* padding: 25px 80px; */
+
+}
+
+.header .container .profile-content .position-relative button::before,
+.header .container .profile-content .position-relative button::after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #54E6E7;
+
+
+}
+
+.header .container .profile-content .position-relative span::before,
+.header .container .profile-content .position-relative span::after {
+    content: "";
+    width: 3px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #54E6E7;
+
+}
+
+.header .container .profile-content .position-relative button:hover::before,
+.header .container .profile-content .position-relative button:hover::after {
+    width: 100%;
+
+}
+
+.header .container .profile-content .position-relative button:hover span::before,
+.header .container .profile-content .position-relative button:hover span:after {
+    height: 100%;
+
+}
+
+.header .container .profile-content .position-relative button::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+
+}
+
+.header .container .profile-content .position-relative button span::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.42;
+
+}
+
+.header .container .profile-content .position-relative button::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+
+}
+
+.header .container .profile-content .position-relative button span::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+
+}
+
+/* akhir button hover */
+
+.header .container .profile-content #buttonMaze {
+    background-color: #2D7A58;
+    font-size: 12px;
+    position: absolute;
+    right: -133px;
+    top: -490px;
+}
+
+.header .container .profile-content #aircraft {
+    background-color: #EE767F;
+    width: 120px;
+    font-size: 12px;
+    position: absolute;
+    left: 537px;
+    top: -591px;
+
+}
+
+.header .container .profile-content #survival {
+    background-color: #91B4F1;
+    font-size: 12px;
+    position: absolute;
+    right: -240px;
+    top: -530px;
+
+}
+
+.header .container .profile-content #memory {
+    background-color: #FC7C07;
+    font-size: 12px;
+    position: absolute;
+    right: -420px;
+    top: -570px;
+
+}
+
+.header .container .profile-content #tower {
+    background-color: #9A774D;
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    top: -955px;
+}
+
+.header .container .profile-content #rubik {
+    background-color: #A8A019;
+    font-size: 12px;
+    position: absolute;
+    right: 55px;
+    top: -699px;
+}
+
+.header .container .profile-content #archery {
+    background-color: #596B9D;
+    font-size: 12px;
+    position: absolute;
+    right: -295px;
+    top: -699px;
+}
+
+.header .container .profile-content #snake {
+    background-color: #A773C1;
+    font-size: 12px;
+    position: absolute;
+    right: -640px;
+    top: -959px;
+}
+
+
+.header .container .btn {
+    position: absolute;
+}
+
+
+
+
+
+/* responsive header 320*/
+@media (max-width:320px) {
+    .header .container .profile-content img {
+        border-radius: 25%;
+        width: 280px;
+        height: 200px;
+        position: absolute;
+        right: 20px;
+    }
+
+
+
+    .header .container .profile-content #buttonMaze {
+        background-color: #2D7A58;
+        border-radius: 15%;
+        position: absolute;
+        left: -30px;
+        top: 1px;
+        right: 68px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 80px;
+    }
+
+    .header .container .profile-content #aircraft {
+        background-color: #EE767F;
+        width: 120px;
+        border-radius: 15%;
+        position: absolute;
+        left: 78px;
+        top: -65px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 80px;
+    }
+
+    .header .container .profile-content #survival {
+        background-color: #91B4F1;
+        border-radius: 15%;
+        position: absolute;
+        left: -20px;
+        top: -65px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .header .container .profile-content #memory {
+        background-color: #FC7C07;
+        border-radius: 15%;
+        position: absolute;
+        right: -30px;
+        top: -80px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .header .container .profile-content #archery {
+        background-color: #596B9D;
+        border-radius: 15%;
+        position: absolute;
+        right: 40px;
+        top: -220px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .header .container .profile-content #rubik {
+        background-color: #A8A019;
+        border-radius: 15%;
+        position: absolute;
+        right: 85px;
+        top: -210px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .header .container .profile-content #snake {
+        background-color: #A773C1;
+        border-radius: 15%;
+        position: absolute;
+        right: -95px;
+        top: -360px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .header .container .profile-content #tower {
+        background-color: #9A774D;
+        border-radius: 15%;
+        position: absolute;
+        right: 90px;
+        top: -270px;
+        z-index: 999;
+        text-align: center;
+        font-size: 10px;
+        height: 30px;
+        width: 98px;
+    }
+
+    .profile-content {
+        height: 450px;
+        padding: 0px
+    }
+
+    .sections-wrapper {
+        padding-top: 120px;
+    }
+
+    .btn.btn-cta-primary.pull-right.contact {
+        background-color: #EE767F;
+        position: absolute;
+        right: 60px;
+    }
+
+    .button-relative .btn.btn-cta-primary.pull-right.contact {
+        background-color: #EE767F;
+        position: absolute;
+        top: 630px;
+        left: 40px;
+        width: 125px;
+        margin-left: 120px;
+        margin-top: 50px;
+    }
+
+    .button-relative .btn.btn-cta-primary.pull-right.mail {
+        background-color: #D6B16D;
+        position: absolute;
+        top: 630px;
+        margin-right: -9px;
+        margin-top: 50px;
+    }
+}
+
+/* akhir responsive header 320*/
+
+
+.container.sections-wrapper {
+    margin-top: -110px;
+}
+
+.button-relative .btn.btn-cta-primary.pull-right.contact {
+    background-color: #EE767F;
+    position: absolute;
+    right: 60px;
+}
+
+.button-relative .btn.btn-cta-primary.pull-right.mail {
+    background-color: #D6B16D;
+    position: absolute;
+    right: 200px;
+}
+
+/* AKHIR HEADER */
