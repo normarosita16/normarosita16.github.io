@@ -197,6 +197,28 @@
                                 <!--//desc-->
                             </div>
 
+                            <div class="item featured text-center">
+                                <h3 class="title">CLOVE</h3>
+                                <p class="summary">System Management Personel TNI-AD</p>
+                                <div class="featured-image">
+                                    <a 
+                                        target="_blank">
+                                        <img class="img-responsive project-image"
+                                            src="assets/images/projects/clove.jpg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+
+                                <div class="desc text-left">
+                                    <p><b>Backend Technology Stack</b> - NodeJs, ExpressJs, PostgreSQL </p>
+                                    <p><b>Frontend Technology Stack</b> - VueJs, Vue-Bootstrap, Leaflet, Apexcharts</p>
+                                    <p><b>Team Size</b> - 1.</p>
+                                </div>
+                                <!--//desc-->
+                            </div>
+
                              
 
                             <div class="item featured text-center">
@@ -858,6 +880,9 @@
         } else if (category === 'bts') {
             // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
             isVisible = (title === 'JOVEN Crowdfunding' || title === 'TAP OCR' || title === 'TAP Fertilizer Pupuk');
+        } else if (category === 'ids') {
+            // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
+            isVisible = (title === 'CLOVE');
         }
         
         // Menampilkan atau menyembunyikan proyek sesuai dengan kondisi
