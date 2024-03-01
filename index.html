@@ -164,6 +164,15 @@
                 <section class="latest section">
                     <div class="section-inner">
                         <h2 class="heading">Projects</h2>
+                        <div class="button-group text-center">
+                            <button class="btn btn-default" onclick="filterProjects('all')">All</button>
+                            <button class="btn btn-default" onclick="filterProjects('freelance')">Freelance</button>
+                            <button class="btn btn-default" onclick="filterProjects('ids')">IDS</button>
+                            <button class="btn btn-default" onclick="filterProjects('todis')">Todis</button>
+                            <button class="btn btn-default" onclick="filterProjects('cba')">CBA</button>
+                            <button class="btn btn-default" onclick="filterProjects('bts')">BTS</button>
+                        </div>
+                        <br>
                         <div class="content">
 
                             <div class="item featured text-center">
@@ -188,7 +197,7 @@
                                 <!--//desc-->
                             </div>
 
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">Iroiro Station</h3>
@@ -212,7 +221,7 @@
                                 <!--//desc-->
                             </div>
 
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">System Information for Emergency Preparedness & Response (SYNERGY)</h3>
@@ -235,7 +244,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">KSP Amanah Madina</h3>
@@ -259,7 +268,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">Muhammadiyah Evoting System</h3>
@@ -282,7 +291,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">PASUTRI CLINIC</h3>
@@ -305,7 +314,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">Sistem Koperasi Karyawan Universitas Muhammadiyah</h3>
@@ -329,7 +338,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">School Management System (SMS) / LMS</h3>
@@ -352,7 +361,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
 
                             <div class="item featured text-center">
                                 <h3 class="title">JOVEN Crowdfunding</h3>
@@ -375,7 +384,7 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <hr class="divider" />
+                             
                             
                             <div class="item featured text-center">
                                 <h3 class="title">TAP OCR</h3>
@@ -399,7 +408,7 @@
                             </div>
                             <!--//item-->
                             
-                            <hr class="divider" />
+                             
                             
                              <div class="item featured text-center">
                                 <h3 class="title">TAP Fertilizer Pupuk</h3>
@@ -822,6 +831,46 @@
             }
           }
         };
+
+        function filterProjects(category) {
+    // Mendapatkan semua item proyek
+    var projects = document.querySelectorAll('.item.featured');
+
+    // Iterasi melalui setiap item proyek
+    projects.forEach(function(project) {
+        // Mendapatkan judul proyek
+        var title = project.querySelector('.title').innerText.trim();
+
+        // Menentukan apakah proyek sesuai dengan kategori yang dipilih
+        var isVisible = false;
+        if (category === 'all') {
+            // Menampilkan semua proyek untuk kategori 'all'
+            isVisible = true;
+        } else if (category === 'freelance') {
+            // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
+            isVisible = (title === 'SIKARAD' || title === 'Iroiro Station');
+        } else if (category === 'todis') {
+            // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
+            isVisible = (title === 'KSP Amanah Madina' || title === 'PASUTRI CLINIC' || title === 'Sistem Koperasi Karyawan Universitas Muhammadiyah');
+        } else if (category === 'cba') {
+            // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
+            isVisible = (title === 'System Information for Emergency Preparedness & Response (SYNERGY)' || title === 'Muhammadiyah Evoting System' || title === 'School Management System (SMS) / LMS');
+        } else if (category === 'bts') {
+            // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
+            isVisible = (title === 'JOVEN Crowdfunding' || title === 'TAP OCR' || title === 'TAP Fertilizer Pupuk');
+        }
+        
+        // Menampilkan atau menyembunyikan proyek sesuai dengan kondisi
+        if (isVisible) {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    });
+}
+
+
+
       </script>
 
 
