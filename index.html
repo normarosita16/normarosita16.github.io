@@ -36,21 +36,30 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="style.css">
-    <style>
-       .typewrite > .wrap {
-    border-right: 0.08em solid #778492; /* Warna baru */
-    animation: blink-caret 0.75s step-end infinite;
-    font-size: 0.8em; /* Ukuran teks yang lebih kecil */
-  }
-
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #778492; /* Warna baru */
-    }
-  }
+    <style>    
+        .typewrite > .wrap {
+          position: relative;
+          display: inline-block; /* Membuat kursor tetap muncul */
+          font-size: 0.8em; /* Ukuran teks yang lebih kecil */
+        }
+      
+        .typewrite > .wrap:after {
+          content: '|'; /* Simbol kursor */
+          position: absolute;
+          top: 0;
+          right: -0.1em; /* Muncul di sebelah kanan border-right */
+          animation: blink-caret 0.75s step-end infinite;
+        }
+      
+        @keyframes blink-caret {
+          from, to {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        }
+      
       </style>
 </head>
 
