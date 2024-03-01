@@ -59,6 +59,75 @@
             opacity: 0;
           }
         }
+
+        /* All button */
+button[data-category='all'] {
+    background-color: #2D7A58;
+    border-radius: 15%;
+    color: white;
+}
+
+button[data-category='all']:hover {
+    background-color: #f0e1e1;
+}
+
+/* Freelance button */
+button[data-category='freelance'] {
+    background-color: #EE767F;
+    border-radius: 15%;
+    color: white;
+}
+
+button[data-category='freelance']:hover {
+    background-color: #f0e1e1;
+}
+
+/* IDS button */
+button[data-category='ids'] {
+    background-color: #596B9D;
+    border-radius: 15%;
+    color: white;
+}
+
+button[data-category='ids']:hover {
+    background-color: #f0e1e1;
+}
+
+/* Todis button */
+button[data-category='todis'] {
+    background-color: #9A774D;
+    border-radius: 15%;
+    color: white;
+}
+
+button[data-category='todis']:hover {
+    background-color: #f0e1e1;
+}
+
+/* CBA button */
+button[data-category='cba'] {
+    background-color: #91B4F1;
+    border-radius: 15%;
+    color: white;
+}
+
+button[data-category='cba']:hover {
+    background-color: #f0e1e1;
+}
+
+/* BTS button */
+button[data-category='bts'] {
+    background-color: #FC7C07;
+    border-radius: 15%;
+    color: white;
+}
+
+button[data-category='bts']:hover {
+    background-color: #f0e1e1;
+}
+
+
+
       
       </style>
 </head>
@@ -165,13 +234,13 @@
                     <div class="section-inner">
                         <h2 class="heading">Projects</h2>
                         <div class="button-group text-center">
-                            <button class="btn btn-default" onclick="filterProjects('all')">All</button>
-                            <button class="btn btn-default" onclick="filterProjects('freelance')">Freelance</button>
-                            <button class="btn btn-default" onclick="filterProjects('ids')">IDS</button>
-                            <button class="btn btn-default" onclick="filterProjects('todis')">Todis</button>
-                            <button class="btn btn-default" onclick="filterProjects('cba')">CBA</button>
-                            <button class="btn btn-default" onclick="filterProjects('bts')">BTS</button>
-                        </div>
+                            <button class="btn btn-default" data-category="all" onclick="filterProjects('all')">All</button>
+                            <button class="btn btn-default" data-category="freelance" onclick="filterProjects('freelance')">Freelance</button>
+                            <button class="btn btn-default" data-category="ids" onclick="filterProjects('ids')">IDS</button>
+                            <button class="btn btn-default" data-category="todis" onclick="filterProjects('todis')">Todis</button>
+                            <button class="btn btn-default" data-category="cba" onclick="filterProjects('cba')">CBA</button>
+                            <button class="btn btn-default" data-category="bts" onclick="filterProjects('bts')">BTS</button>
+                        </div>                        
                         <br>
                         <div class="content">
 
