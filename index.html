@@ -36,7 +36,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="style.css">
-    <style>    
+    <style>  
+
+    .clickable-title {
+        cursor: pointer;
+    }
+
         .typewrite > .wrap {
           position: relative;
           display: inline-block; /* Membuat kursor tetap muncul */
@@ -245,30 +250,49 @@ button[data-category='bts']:hover {
                         <div class="content">
 
                             <div class="item featured text-center">
-                                <h3 class="title">SIKARAD</h3>
+                                <h3 class="title clickable-title" data-toggle="modal" data-target="#sikaradModal">SIKARAD</h3>
                                 <p class="summary">System Management Personel TNI-AD</p>
                                 <div class="featured-image">
-                                    <a 
-                                        target="_blank">
-                                        <img class="img-responsive project-image"
-                                            src="assets/images/projects/sikarad.jpg" alt="project name" />
+                                    <a target="_blank">
+                                        <img class="img-responsive project-image" src="assets/images/projects/sikarad.jpg" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">New</div>
                                     </div>
                                 </div>
-
+                            
                                 <div class="desc text-left">
                                     <p><b>Backend Technology Stack</b> - NodeJs, ExpressJs, PostgreSQL </p>
                                     <p><b>Frontend Technology Stack</b> - VueJs, Vue-Bootstrap, Leaflet, Apexcharts</p>
                                     <p><b>Team Size</b> - 1.</p>
                                 </div>
-                                <!--//desc-->
+                                <!--//desc--> 
                             </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="sikaradModal" tabindex="-1" role="dialog" aria-labelledby="sikaradModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="sikaradModalLabel">SIKARAD - Penjelasan</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Aplikasi SIKARAD adalah aplikasi Manajemen Data Personel TNI-AD. Tujuannya adalah untuk mengklasifikasikan personel berdasarkan masa jabatan. Aplikasi ini menggunakan teknologi modern dan menyajikan pemetaan data di peta dengan notifikasi ketika jabatan berlangsung lebih dari 1,5 tahun.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
 
                             <div class="item featured text-center">
                                 <h3 class="title">CLOVE</h3>
-                                <p class="summary">System Management Personel TNI-AD</p>
+                                <p class="summary">Aplikasi yang digunakan untuk </p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -339,7 +363,7 @@ button[data-category='bts']:hover {
 
                             <div class="item featured text-center">
                                 <h3 class="title">KSP Amanah Madina</h3>
-                                <p class="summary">Koperasi Simpan Pinjam Amanah Madina Sidoarjo</p>
+                                <p class="summary">Sistem koperasi yang dapat membantu pengelolaan keuangan yang efisien dan transparan bagi anggotanya serta memudahkan pengawasan dan pengelolaan keuangan koperasi secara keseluruhan. fiturnya yaitu simpanan berjangka, simpanan amanah, simpanan idul fitri, simpanan pendidikan, simpanan umroh, pembiayaan, laporan keuangan, laporan neraca, buku besar, jurnal umum, jurnal penyesuaian, rekapitulasi kas, laporan akad, laporan pasar, laporan pegawai</p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -409,7 +433,7 @@ button[data-category='bts']:hover {
 
                             <div class="item featured text-center">
                                 <h3 class="title">Sistem Koperasi Karyawan Universitas Muhammadiyah</h3>
-                                <p class="summary">Sistem Koperasi v2 Karyawan Universitas Muhammadiyah</p>
+                                <p class="summary">Sistem koperasi yang dapat membantu pengelolaan keuangan yang efisien dan transparan bagi anggotanya serta memudahkan pengawasan dan pengelolaan keuangan koperasi secara keseluruhan. fiturnya yaitu simpanan deposito, simpanan wajib, simpanan sukarela, simpanan pokok, pembiayaan, laporan keuangan, laporan neraca, buku besar, jurnal umum, jurnal penyesuaian, rekapitulasi kas dll </p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -433,7 +457,7 @@ button[data-category='bts']:hover {
 
                             <div class="item featured text-center">
                                 <h3 class="title">School Management System (SMS) / LMS</h3>
-                                <p class="summary">School Management System SMP Muhammadiyah 8</p>
+                                <p class="summary">Sebuah Aplikasi Yang Dirancang Untuk Mempermudah Pengelolaan Sekolah Dengan Mengintegrasikan Teknologi Modern. Terdapat fitur untuk memanagement data guru, siswa berdasarkan kelas, dan CBT</p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -456,7 +480,7 @@ button[data-category='bts']:hover {
 
                             <div class="item featured text-center">
                                 <h3 class="title">JOVEN Crowdfunding</h3>
-                                <p class="summary">Investment Web App & Mobile App</p>
+                                <p class="summary">Platform Crowdfunding yang memungkinkan individu untuk berinvestasi dalam proyek-proyek startup atau bisnis kecil dengan memberikan dana secara kolektif. Dalam model crowdfunding seperti ini, investor tidak memperoleh saham dalam arti konvensional, tetapi biasanya menerima imbalan atau manfaat berdasarkan tingkat investasi mereka, seperti produk atau layanan gratis, atau bahkan bagian dari pendapatan proyek.</p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -479,7 +503,7 @@ button[data-category='bts']:hover {
                             
                             <div class="item featured text-center">
                                 <h3 class="title">TAP OCR</h3>
-                                <p class="summary">Document Management System of PT Triputra Agro Persada</p>
+                                <p class="summary">aplikasi lanjutan dari TAP Fertilizer yang memberikan tambahan fungsionalitas ke TAP Fertilizer dengan fokus pada manajemen tagihan, dokumen, dan pelaporan terkait dengan penggunaan pupuk. Ini memperluas kemampuan sistem untuk menyediakan layanan yang lebih lengkap dan terintegrasi dalam pengelolaan pupuk dan keuangan terkait di bidang pertanian.</p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -497,13 +521,12 @@ button[data-category='bts']:hover {
                                 </div>
                                 <!--//desc-->
                             </div>
-                            <!--//item-->
-                            
+                            <!--//item-->                           
                              
                             
                              <div class="item featured text-center">
                                 <h3 class="title">TAP Fertilizer Pupuk</h3>
-                                <p class="summary">Fertilizer Distribution System of PT Triputra Agro Persada</p>
+                                <p class="summary">Sistem Aplikasi yang digunakan untuk mengelola dan mengoptimalkan penggunaan pupuk yang dimiliki dan dioperasikan oleh perusahaan PT Triputra Agro Persada. Aplikasi ini dapat membantu petani atau praktisi pertanian untuk mengoptimalkan penggunaan pupuk, meningkatkan hasil panen, dan mengurangi dampak lingkungan dengan mengurangi overdosis atau penggunaan pupuk yang tidak efisien. Terdapat beberapa fitur yaitu perhitungan Dosage, monitoring nutrisi, rekomendasi pemupukan, pelaporan dan analisis, Pengadaan Pupuk, Penyimpanan dan Manajemen Stok, Distribusi dan Pengiriman</p>
                                 <div class="featured-image">
                                     <a 
                                         target="_blank">
@@ -636,7 +659,7 @@ button[data-category='bts']:hover {
                                 <div class="item">
                                     <h3 class="level-title">Vue Js &amp; vuetify &amp; vuex<span class="level-label"
                                             data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to add more info...">Beginner</span></h3>
+                                            title="You can use the tooltip to add more info...">Competent</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="40%">
                                         </div>
@@ -654,15 +677,25 @@ button[data-category='bts']:hover {
                                     </div>
                                     <!--//level-bar-->
                                 </div>
+                                <div class="item">
+                                    <h3 class="level-title">PHP <span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to add more info...">Beginner</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="30%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
                                        <!--//item-->
-                                       <div class="item">
+                                       <!-- <div class="item">
                                         <h3 class="level-title">GO <span class="level-label">Beginner</span></h3>
                                         <div class="level-bar">
                                             <div class="level-bar-inner" data-level="30%">
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <!--//level-bar-->
-                                    </div>
+                                    <!-- </div> -->
                                 <!--//item-->
                                 <div class="item">
                                     <h3 class="level-title">PostgreSQL &amp; MySQL<span
@@ -721,11 +754,11 @@ button[data-category='bts']:hover {
                                 </div>
                                 <!--//item-->
                                 <div class="item">
-                                    <h3 class="level-title">Java &amp; Spring <span class="level-label">Competent</span></h3>
+                                    <!-- <h3 class="level-title">Java &amp; Spring <span class="level-label">Competent</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="40%">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
@@ -748,20 +781,20 @@ button[data-category='bts']:hover {
                                 </div>
                                 <!--//item-->
                                 <div class="item">
-                                    <h3 class="level-title">Firebash <span class="level-label">Beginner</span></h3>
+                                    <!-- <h3 class="level-title">Firebash <span class="level-label">Beginner</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="60%">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
                                 <div class="item">
-                                    <h3 class="level-title">MarvelApp <span class="level-label">Beginner</span></h3>
+                                    <!-- <h3 class="level-title">MarvelApp <span class="level-label">Beginner</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="70%">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!--//level-bar-->
                                 </div>
                                 <!--//item-->
