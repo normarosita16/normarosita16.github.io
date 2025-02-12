@@ -250,6 +250,46 @@ button[data-category='bts']:hover {
                         <div class="content">
 
                             <div class="item featured text-center">
+                                <h3 class="title clickable-title" data-toggle="modal" data-target="#iloModal">Dashboard Loan Portfolio Monitoring System</h3>
+                                <p class="summary">Dashboard Loan Portfolio Monitoring System ILO</p>
+                                <div class="featured-image">
+                                    <a target="_blank">
+                                        <img class="img-responsive project-image" src="assets/images/projects/ilo.jpg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                            
+                                <div class="desc text-left">
+                                    <p><b>Role</b> - Backend Developer.</p>
+                                    <p><b>Backend Technology Stack</b> - NodeJs, ExpressJs, MongoDB, bunyan, crypto-js, nodemailer </p>
+                                    <p><b>Team Size</b> - 5.</p>
+                                </div>
+                                <!--//desc--> 
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="iloModal" tabindex="-1" role="dialog" aria-labelledby="iloModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="iloModalLabel">Dashboard Loan Portfolio Monitoring System - Penjelasan</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Aplikasi SIKARAD adalah aplikasi Manajemen Data Personel TNI-AD. Tujuannya adalah untuk mengklasifikasikan personel berdasarkan masa jabatan. Aplikasi ini menggunakan teknologi modern dan menyajikan pemetaan data di peta dengan notifikasi ketika jabatan berlangsung lebih dari 1,5 tahun.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item featured text-center">
                                 <h3 class="title clickable-title" data-toggle="modal" data-target="#sikaradModal">SIKARAD</h3>
                                 <p class="summary">System Management Personel TNI-AD</p>
                                 <div class="featured-image">
@@ -343,9 +383,9 @@ button[data-category='bts']:hover {
                                         <img class="img-responsive project-image"
                                             src="assets/images/projects/clove.jpg" alt="project name" />
                                     </a>
-                                    <div class="ribbon">
+                                    <!-- <div class="ribbon">
                                         <div class="text">New</div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="desc text-left">
@@ -388,9 +428,9 @@ button[data-category='bts']:hover {
                                         <img class="img-responsive project-image"
                                             src="assets/images/projects/iro-iro.jpg" alt="project name" />
                                     </a>
-                                    <div class="ribbon">
+                                    <!-- <div class="ribbon">
                                         <div class="text">New</div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="desc text-left">
@@ -1259,7 +1299,7 @@ button[data-category='bts']:hover {
             isVisible = (title === 'JOVEN Crowdfunding' || title === 'TAP OCR' || title === 'TAP Fertilizer Pupuk');
         } else if (category === 'ids') {
             // Menampilkan proyek dengan judul 'SIKARAD' atau 'Iroiro Station' untuk kategori 'freelance'
-            isVisible = (title === 'CLOVE' || title === 'EPMS');
+            isVisible = (title === 'CLOVE' || title === 'EPMS' || title === 'Dashboard Loan Portfolio Monitoring System');
         }
         
         // Menampilkan atau menyembunyikan proyek sesuai dengan kondisi
